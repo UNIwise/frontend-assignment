@@ -86,9 +86,9 @@ class Root extends React.Component {
                 <h1>Task 1 - Create a list</h1>
                 <p className="task-description">
                   This first task is purely about using JSX. Make a ordinary
-                  unorderen list using 'ul' and li'. The list must{" "}
+                  unordered list using 'ul' and li'. The list must{" "}
                   <b>not be static</b>. You have to <b>use the array</b> in
-                  state to <b>loop on</b> it.
+                  state and <b>iterate over</b> it.
                 </p>
               </React.Fragment>
             )}
@@ -103,8 +103,8 @@ class Root extends React.Component {
               <React.Fragment>
                 <h1>Task 2 - Create a controlled input</h1>
                 <p className="task-description">
-                  This first task is purely about using{" "}
-                  <b>React's synthetic event </b>
+                  This task is purely about using{" "}
+                  <b>React's synthetic event</b>
                   system. Use the existing input and paragraph to display the{" "}
                   <b>the input value</b> in the paragraph. The paragaph must be
                   kept in sync.
@@ -124,10 +124,9 @@ class Root extends React.Component {
                 <p className="task-description">
                   Use the <b>knowledge</b> you used in the{" "}
                   <b>previus 2 tasks</b> to make at searchable list. You must
-                  have a <b>input</b> and a <b>list</b>. The list must be{" "}
+                  have a <b>input</b> and a <b>list</b>. The list should be{" "}
                   <b>filtered</b> using the value in the input as the user
-                  types. To achive this you may need a method to filter the
-                  data.
+                  types.
                 </p>
               </React.Fragment>
             )}
@@ -142,13 +141,13 @@ class Root extends React.Component {
               <React.Fragment>
                 <h1>Task 4 - Use component composition</h1>
                 <p className="task-description">
-                  Use the <b>knowledge</b> you have in the <b>previus tasks</b>{" "}
+                  Use the <b>knowledge</b> you used in the <b>previus tasks</b>{" "}
                   to make a searchable list. The requirement is the same as with
                   Task 3.
                   <br />
                   <br />
                   Except, this time you must <b>encapsulate</b> the <b>UI</b>{" "}
-                  parts in <b>small components</b>. This means the Input and
+                  parts into <b>small components</b>. This means the Input and
                   List goes into different small components. In order to
                   communicate between Input and list the parrent
                   component(Task4) must be used by passing props and managing

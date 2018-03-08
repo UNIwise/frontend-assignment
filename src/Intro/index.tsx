@@ -7,9 +7,9 @@ const Intro: React.SFC<IProps> = props => {
     <div style={{ textAlign: "left", marginTop: 64 }}>
       <h1>Welcome</h1>
       <p>
-        If you are reading this, you are most likely starting an application process at
-        Uniwise. In this intro task you will have the opportunity to show your
-        skills as well as be challenged on your competencies.
+        If you are reading this, you are most likely starting an application
+        process at Uniwise. In this assignment you will have the opportunity to
+        show your skills as well as challenge your competencies.
       </p>
       <h2>Intro</h2>
       <p>
@@ -19,10 +19,10 @@ const Intro: React.SFC<IProps> = props => {
       <h3>Course of action</h3>
       <p>
         The task consists of small simple tasks that increase in complexity and
-        difficulty as you solve the sub-tasks. It is allowed to use code third
-        party code and npm packages. If you find that a given subdivision is too
-        difficult or too easy, feel free to skip to the next subdivision. Please
-        enter a comment in the code with relevant comments.
+        difficulty as you solve them. It is allowed to use code third party code
+        and npm packages. If you find that a given task is too difficult or too
+        easy, feel free to skip to the next task. Feel free to leave comments
+        with relevant info.
       </p>
       <h3>Technologies</h3>
       <p>
@@ -32,19 +32,13 @@ const Intro: React.SFC<IProps> = props => {
         <ul>
           <li>ReactJs</li>
           <li>Typescript</li>
-          <li>Mobx</li>
         </ul>
       </p>
       <h3>Get started</h3>
       <p>
-        To get started with the intro task, clone or download this repository.
-        It is a prerequisite that you have NodeJS installed on the machine where
-        the code should be run.
-        <br />
-        <br />
-        Once you have NodeJs installed and download this repository you are
-        ready to get started. Each subdivision has a corresponding folder
-        located in the src folder.
+        When you are ready to solve that tasks you can select a task in the top
+        of the screen. The associated code wil be found in the corresponding
+        folder inside the src folder.
       </p>
     </div>
   );
