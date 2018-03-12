@@ -29,11 +29,11 @@ const Intro: React.SFC<IProps> = props => {
         Here is a comprehensive overview of technologies used sorted by
         relevance. It would be advantageous if you have knowledge of one or more
         of the following:
-        <ul>
-          <li>ReactJs</li>
-          <li>Typescript</li>
-        </ul>
       </p>
+      <ul>
+        <li>ReactJs</li>
+        <li>Typescript</li>
+      </ul>
       <h3>Get started</h3>
       <p>
         When you are ready to solve that tasks you can select a task in the top

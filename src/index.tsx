@@ -13,16 +13,20 @@ import Task2 from "./2";
 import Task3 from "./3";
 import Task4 from "./4";
 import Task5 from "./5";
+import Task6 from "./6";
 
 // TaskWrapper
 const TaskWrapper: React.SFC<{
   title?: string;
   describtion?: () => React.ReactNode;
+  taskClassName: string;
 }> = props => {
   return (
     <div>
       {props.describtion ? props.describtion() : "No Description"}
-      <div className="task-container">{props.children}</div>
+      <div className={`task-container ${props.taskClassName}`}>
+        {props.children}
+      </div>
     </div>
   );
 };
@@ -81,6 +85,7 @@ class Root extends React.Component {
       case 1:
         return (
           <TaskWrapper
+            taskClassName="TASK_1"
             describtion={() => (
               <React.Fragment>
                 <h1>Task 1 - Create a list</h1>
@@ -99,12 +104,12 @@ class Root extends React.Component {
       case 2:
         return (
           <TaskWrapper
+            taskClassName="TASK_2"
             describtion={() => (
               <React.Fragment>
                 <h1>Task 2 - Create a controlled input</h1>
                 <p className="task-description">
-                  This task is purely about using{" "}
-                  <b>React's synthetic event</b>
+                  This task is purely about using <b>React's synthetic event</b>
                   system. Use the existing input and paragraph to display the{" "}
                   <b>the input value</b> in the paragraph. The paragaph must be
                   kept in sync.
@@ -118,6 +123,7 @@ class Root extends React.Component {
       case 3:
         return (
           <TaskWrapper
+            taskClassName="TASK_3"
             describtion={() => (
               <React.Fragment>
                 <h1>Task 3 - Create a searchable list</h1>
@@ -137,6 +143,7 @@ class Root extends React.Component {
       case 4:
         return (
           <TaskWrapper
+            taskClassName="TASK_4"
             describtion={() => (
               <React.Fragment>
                 <h1>Task 4 - Use component composition</h1>
@@ -162,22 +169,54 @@ class Root extends React.Component {
       case 5:
         return (
           <TaskWrapper
+            taskClassName="TASK_5"
             describtion={() => (
               <React.Fragment>
-                <h1>Task 5 - Freestyle</h1>
+                <h1>Task 5 - Use styles</h1>
                 <p className="task-description">
-                  This task is about showing off your skills regarding React or
-                  Javescript/Typescript in generel. You are allowed to download
-                  new npm packages and even hack the whole application if you feel
-                  comftable doing so.
-                  <br />
-                  <br />
-                  Do whatever you would like to show off.
+                  This task is mainly about <b>styling</b> in ReactJS in order
+                  to create a <b>beautiful UI</b>. Use Less to style the form
+                  with interaction feedback such as hover, focus and so on. The
+                  goal is to make the form as aesthetically pleasing as
+                  possible.
                 </p>
               </React.Fragment>
             )}
           >
             <Task5 />
+          </TaskWrapper>
+        );
+      case 6:
+        return (
+          <TaskWrapper
+            taskClassName="TASK_6"
+            describtion={() => (
+              <React.Fragment>
+                <h1>Task 6 - Create a Todo List and/or Freestyle</h1>
+                <p className="task-description">
+                  This task is mainly about <b>combining different concepts</b>{" "}
+                  from ReactJS in order to create a{" "}
+                  <b>small and simple application</b>.
+                  <br />
+                  <br />
+                  You can either choose to create a tiny application your self
+                  or follow the description below to create a todo app :
+                </p>
+                <ul className="task-description">
+                  <li>Create todos</li>
+                  <li>Mark them as done</li>
+                  <li>See a list of done todos and a list of pending todos.</li>
+                  <li>Search for todos</li>
+                  <li>Delete todos</li>
+                </ul>
+                <p className="task-description">
+                  Feel free to use Less to style the applications and to install
+                  third-party packages if needed.
+                </p>
+              </React.Fragment>
+            )}
+          >
+            <Task6 />
           </TaskWrapper>
         );
       default:
@@ -226,6 +265,12 @@ class Root extends React.Component {
             onClick={this.handleTaskSelect(5)}
           >
             Task 5
+          </button>
+          <button
+            className={this.state.selected === 6 ? "selected" : ""}
+            onClick={this.handleTaskSelect(6)}
+          >
+            Task 6
           </button>
         </nav>
         <div className="route-container">{this.renderTask()}</div>
