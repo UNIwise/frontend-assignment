@@ -9,7 +9,7 @@ To run the project on your machine you need the following installed.
 
 # Clone this repository
 
-To get started you just need to clone this repo, run `npm install` and then run `npm run start`. Here after you changes in the task folders will automatically be loaded in the corresponsing task tab.
+To get started you just need to clone this repo, run `npm install` and then run `npm run start`. Here after, changes in the codes will automatically be compiled.
 
 # Get started
 
