@@ -1,10 +1,9 @@
 # Prerequisites
 
-To run the project on a machine you need the following intalled.
+To run the project on your machine you need the following installed.
 
 * Git
-* NodeJS,
-* NPM
+* NodeJS
 * A code editor
 * A web browser
 
