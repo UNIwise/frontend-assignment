@@ -1,6 +1,6 @@
 # Prerequisites
 
-To run the project on your machine you need the following installed.
+To complete this assignment on your machine you need the following installed.
 
 * Git
 * NodeJS
@@ -9,8 +9,8 @@ To run the project on your machine you need the following installed.
 
 # Clone this repository
 
-To get started you just need to clone this repo, run `npm install` and then run `npm run start`. Here after, changes in the codes will automatically be compiled.
+To get started you just need to clone this repo, run `npm install` and then run `npm run start`. Here after, the development server will be running and changes in the codes will automatically be compiled.
 
 # Get started
 
-You are now ready to get started. Find the reset of the instructions inside the Application.
+You are now ready to get started. Find the rest of the instructions inside the Application.
