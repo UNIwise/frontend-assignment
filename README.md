@@ -16,11 +16,12 @@ To get started you just need to clone this repo, run `npm install` and additiona
 You are now ready to get started. Find the rest of the instructions inside the Application.
 
 # Requirements
-0. The frontend should be able to be started with yarn start.  
-1.  Make an ordinary unordered list of to do items using 'ul' and li'. 
+0. The frontend should be able to be started with yarn start.
+1. Look into the assignment 6 in order to get started.
+2.  Make an ordinary unordered list of to do items using 'ul' and li'. 
 The list must <b>not be static</b>. You have to <b>use the array</b> in state and iterate over it. Look in assignment 1 for setup.
-2. You should be able to create new to do items use the existing input and paragraph to display the input value in the paragraph. 
-3. You should be able to mark to do items as done.
-4. You should be able to see a lift of done todos and a list of pending todos.
-5. You should be able to search for todos with free text.
-6. You should be able to delete todos.
+3. You should be able to create new to do items use the existing input and paragraph to display the input value in the paragraph. 
+4. You should be able to mark to do items as done.
+5. You should be able to see a lift of done todos and a list of pending todos.
+7. You should be able to search for todos with free text.
+8. You should be able to delete todos.
