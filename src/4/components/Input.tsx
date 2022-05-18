@@ -1,23 +1,20 @@
-import * as React from "react";
+import { FunctionComponent } from "react";
 
 /*
-     * The IProps interface defines the props in order to typescript to typecheck for errors.
-     * 
-     * If you would like to proceed without defining types do the following: 
-     * const Input: React.SFC<any> = (props) => {
-     *                        ^^^
-     * 
-     * and remove the IProps interface
-*/
+ * The InputProps interface defines the types for the components props.
+ *
+ * If you would like to proceed without defining types do the following:
+ * const Input: FunctionComponent<any> = (props) => {
+ *                                ^^^
+ *
+ * and remove the InputProps interface
+ */
 
-//
-interface IProps {}
-const Input: React.SFC<IProps> = props => {
+interface InputProps {}
+
+const Input: FunctionComponent<InputProps> = (props) => {
   return (
-    <div>
-      <label>Search Input: </label>
-      <input />
-    </div>
+    <div>#Input goes here#</div>
   );
 };
 

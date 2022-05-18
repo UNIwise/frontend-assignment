@@ -1,0 +1,70 @@
+/*
+  You don't need to change anything in here.
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.task-description {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.task-container {
+  border-radius: 8px;
+  border: 3px dashed #ddd;
+  padding: 16px;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 32px;
+}
+
+nav.menu {
+  background-color: #404040;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #777;
+    color: #fff;
+    padding: 8px 16px;
+    margin-right: 16px;
+    transition: background-color 150ms ease;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #999;
+    }
+
+    &.active {
+      background-color: #86b111;
+    }
+  }
+}

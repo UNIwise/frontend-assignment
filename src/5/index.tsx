@@ -1,42 +1,36 @@
-import * as React from "react";
 // Style
-/*
-* Styles goes inside this Less file
-*/
-import "./index.less";
+import { FunctionComponent, useState } from "react";
+import "./index.scss";
 
-//
-class Task5 extends React.Component {
-  state = {
-    email: "",
-    password: ""
+const Task5: FunctionComponent = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onSubmit = () => {
+    // If you want to do something with form submit
+
+    alert(`Email: ${email} \nPassword: ${password}`);
   };
 
-  handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    this.setState({
-      [e.currentTarget.name]: e.currentTarget.value
-    });
-  };
-
-  render() {
-    return (
-      <form>
+  return (
+    <div id="task-5">
+      <form onSubmit={onSubmit}>
         <label>Email</label>
         <input
           name="email"
-          onChange={this.handleInputChange}
-          value={this.state.email}
+          onChange={(event) => setEmail(event.currentTarget.value)}
+          value={email}
         />
         <label>Password</label>
         <input
           name="password"
-          onChange={this.handleInputChange}
-          value={this.state.password}
+          onChange={(event) => setPassword(event.currentTarget.value)}
+          value={password}
         />
         <button>Login</button>
       </form>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Task5;

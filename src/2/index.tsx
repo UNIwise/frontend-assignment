@@ -1,21 +1,17 @@
-import * as React from "react";
+import { FunctionComponent, useState } from "react";
 
-//
-class Task2 extends React.Component {
-  state = {
-    value: ''
-  };
-  render() {
-    return (
-      <div>
-        <label>Controlled Input: </label>
-        <input />
-        <br />
-        <br />
-        <p>#Show Input value here#</p>
-      </div>
-    );
-  }
-}
+const Task2: FunctionComponent = () => {
+  const [value, setValue] = useState("");
+
+  return (
+    <div>
+      <label>Controlled Input: </label>
+      <input />
+      <br />
+      <br />
+      <p>#Show Input value here#</p>
+    </div>
+  );
+};
 
 export default Task2;
