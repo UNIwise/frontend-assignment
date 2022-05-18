@@ -1,6 +1,6 @@
-# Frontend assignment
+# Frontend assignment :technologist:
 
-## Prerequisites
+## Prerequisites :package:
 
 To complete this assignment on your machine you need the following installed:
 
@@ -8,7 +8,7 @@ To complete this assignment on your machine you need the following installed:
 -   NodeJS
 -   A code editor
 -   A web browser
-## Get started
+## Get started :rocket:
 
 1. Fork this repository and clone it to your local machine
 2. Run `yarn install` to install dependencies
