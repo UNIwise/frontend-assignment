@@ -114,10 +114,26 @@ const Task: FunctionComponent = () => {
           </TaskContainer>
         </>
       );
-    case "4":
+      case "4":
+        return (
+          <>
+            <h1>Task 4 - Use styles</h1>
+            <p className="task-description">
+              This task is mainly about <b>styling</b> in ReactJS in order to
+              create a <b>beautiful UI</b>. Use Less to style the form with
+              interaction feedback such as hover, focus and so on. The goal is to
+              make the form as aesthetically pleasing as possible.
+            </p>
+  
+            <TaskContainer>
+              <Task4 />
+            </TaskContainer>
+          </>
+        );
+      case "5":
       return (
         <>
-          <h1>Task 4 - Use component composition</h1>
+          <h1>Task 5 - Use component composition</h1>
           <p className="task-description">
             Use the <b>knowledge</b> you used in the <b>previous tasks</b> to
             make a searchable list. The requirement is the same as with Task 3.
@@ -126,24 +142,8 @@ const Task: FunctionComponent = () => {
             Except, this time you must <b>encapsulate</b> the <b>UI</b> parts
             into <b>small components</b>. This means the Input and List goes
             into different small components. In order to communicate between the
-            input and the list, the parent component (Task4) must be used by
+            input and the list, the parent component must be used by
             passing props and managing state.
-          </p>
-
-          <TaskContainer>
-            <Task4 />
-          </TaskContainer>
-        </>
-      );
-    case "5":
-      return (
-        <>
-          <h1>Task 5 - Use styles</h1>
-          <p className="task-description">
-            This task is mainly about <b>styling</b> in ReactJS in order to
-            create a <b>beautiful UI</b>. Use Less to style the form with
-            interaction feedback such as hover, focus and so on. The goal is to
-            make the form as aesthetically pleasing as possible.
           </p>
 
           <TaskContainer>

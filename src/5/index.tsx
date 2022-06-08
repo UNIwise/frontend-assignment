@@ -1,36 +1,17 @@
-// Style
-import { FunctionComponent, useState } from "react";
-import "./index.scss";
+import { FunctionComponent } from "react";
 
-const Task5: FunctionComponent = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+// Components
+import Input from "./components/Input";
+import List from "./components/List";
 
-  const onSubmit = () => {
-    // If you want to do something with form submit
-
-    alert(`Email: ${email} \nPassword: ${password}`);
-  };
-
+const Task4: FunctionComponent = () => {
   return (
-    <div id="task-5">
-      <form onSubmit={onSubmit}>
-        <label>Email</label>
-        <input
-          name="email"
-          onChange={(event) => setEmail(event.currentTarget.value)}
-          value={email}
-        />
-        <label>Password</label>
-        <input
-          name="password"
-          onChange={(event) => setPassword(event.currentTarget.value)}
-          value={password}
-        />
-        <button>Login</button>
-      </form>
+    <div>
+      <Input />
+      <br />
+      <List />
     </div>
   );
 };
 
-export default Task5;
+export default Task4;
