@@ -1,4 +1,57 @@
 /* DO NOT CHANGE THIS ROOT CLASS NAME*/
+$lima: #86b111;
+$white: #fff;
+$silver: #ccc;
+
 #task-5 {
-  /* Styles goes here */
+  height: 100%;
+  position: relative;
+}
+
+.green-bar {
+  width: 20px;
+  height: 100%;
+  background-color: $lima;
+  position: absolute;
+}
+
+.form-wrapper {
+  padding: 40px;
+}
+
+.form-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid $silver;
+  margin: 8px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  &:hover {
+    border-color: $lima;
+  }
+  &:focus {
+    outline: none;
+    background-color: $white;
+  }
+}
+
+.form-button {
+  background-color: $lima;
+  font-weight: 500;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-top: 10px;
+  margin-right: 16px;
+  width: 30%;
+  &:hover {
+    background-color: $silver;
+  }
 }
