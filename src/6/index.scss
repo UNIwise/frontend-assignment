@@ -1,4 +1,71 @@
 /* DO NOT CHANGE THIS ROOT CLASS NAME*/
+$lima: #86b111;
+$white: #fff;
+$silver: #ccc;
+
 #task-6 {
-  /* Styles goes here */
+  height: 100%;
+  position: relative;
+}
+.green-bar {
+  width: 20px;
+  height: 100%;
+  background-color: $lima;
+  position: absolute;
+}
+
+.todo-wrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $silver;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  &:hover {
+    border-color: $lima;
+  }
+  &:focus {
+    outline: none;
+    background-color: $white;
+  }
+}
+
+@mixin todo-button {
+  background-color: $lima;
+  font-weight: 500;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-left: 16px;
+
+  &:hover {
+    background-color: $silver;
+  }
+}
+
+.todo-button {
+  @include todo-button;
+}
+
+.todo-delete {
+  @include todo-button;
+}
+
+.todo-item {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
 }
