@@ -1,14 +1,13 @@
 import { FunctionComponent, useState } from "react";
 
+export const items = [
+  { id: 1, itemName: "Item 1" },
+  { id: 2, itemName: "Item 2" },
+  { id: 3, itemName: "Item 3" },
+  { id: 4, itemName: "Item 4" },
+  { id: 5, itemName: "Item 5" },
+];
 const Task1: FunctionComponent = () => {
-  const [items] = useState([
-    { id: 1, itemName: "Item 1" },
-    { id: 2, itemName: "Item 2" },
-    { id: 3, itemName: "Item 3" },
-    { id: 4, itemName: "Item 4" },
-    { id: 5, itemName: "Item 5" },
-  ]);
-
   return (
     <div>
       #List goes here#
