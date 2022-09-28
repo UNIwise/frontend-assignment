@@ -20,7 +20,7 @@ const Task6: React.FunctionComponent = () => {
   const [task, setTask] = useState<string>("");
   const [taskId, setTaskId] = useState<number>(0);
   const [todoList, setTodoList] = useState<ITask[]>([]);
-  const [searchFlag, setSearchFlag] = useState<boolean>(true);
+  const [flag, setFlag] = useState<boolean>(true);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setTask(e.target.value);
@@ -32,7 +32,7 @@ const Task6: React.FunctionComponent = () => {
       const newTask = { name: task, id: taskId };
       setTodoList([...todoList, newTask]);
       setTask("");
-      setSearchFlag(false);
+      setFlag(false);
     }
   };
 
@@ -57,7 +57,7 @@ const Task6: React.FunctionComponent = () => {
           <div className="todo-header">
             <input
               type="text"
-              placeholder={searchFlag ? "Add Task" : "Search or Add a Task"}
+              placeholder={flag ? "Add Task" : "Search or Add a Task"}
               value={task}
               className="todo-input"
               onChange={handleChange}
@@ -68,10 +68,10 @@ const Task6: React.FunctionComponent = () => {
           </div>
           <div className="todo-list">
             {searchResult.length === 0 ? (
-              searchFlag ? (
+              flag ? (
                 <p>Nothing in todo list, try adding items to the list</p>
               ) : (
-                <p>No result found, maybe added it to the list</p>
+                <p>No result found, try adding item to the list</p>
               )
             ) : (
               searchResult
