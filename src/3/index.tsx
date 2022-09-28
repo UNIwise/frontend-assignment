@@ -1,5 +1,12 @@
 import { ChangeEvent, FunctionComponent, useState } from "react";
-import { items } from "../1";
+
+const items = [
+  { id: 1, itemName: "Item 1" },
+  { id: 2, itemName: "Item 2" },
+  { id: 3, itemName: "Item 3" },
+  { id: 4, itemName: "Item 4" },
+  { id: 5, itemName: "Item 5" },
+];
 
 const Task3: FunctionComponent = () => {
   const [inputValue, setInputValue] = useState("");
