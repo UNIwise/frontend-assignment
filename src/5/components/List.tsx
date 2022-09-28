@@ -29,7 +29,7 @@ const List: FunctionComponent<ListProps> = ({ items, value }) => {
             .includes(value.replace(" ", "").toLowerCase());
         })
         .map((item) => {
-          return <Item name={item.itemName} id={item.id} />;
+          return <Item name={item.itemName} key={item.id} />;
         })}
     </div>
   );

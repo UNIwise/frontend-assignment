@@ -12,11 +12,11 @@ import { FunctionComponent } from "react";
 
 interface ItemProps {
   name: string;
-  id: number;
+  id?: number;
 }
 
-const Item: FunctionComponent<ItemProps> = ({ name, id }) => {
-  return <li key={id}>{name}</li>;
+const Item: FunctionComponent<ItemProps> = ({ name }) => {
+  return <li>{name}</li>;
 };
 
 export default Item;
