@@ -1,6 +1,6 @@
 // Style
 import { FunctionComponent, useState } from "react";
-import "./index.scss";
+import classes from "./index.module.scss";
 
 const Task5: FunctionComponent = () => {
   const [email, setEmail] = useState("");
@@ -11,24 +11,31 @@ const Task5: FunctionComponent = () => {
 
     alert(`Email: ${email} \nPassword: ${password}`);
   };
-
+  const isDisabled = !email || !password ? true : false;
   return (
-    <div id="task-5">
-      <form onSubmit={onSubmit}>
-        <label>Email</label>
-        <input
-          name="email"
-          onChange={(event) => setEmail(event.currentTarget.value)}
-          value={email}
-        />
-        <label>Password</label>
-        <input
-          name="password"
-          onChange={(event) => setPassword(event.currentTarget.value)}
-          value={password}
-        />
-        <button>Login</button>
-      </form>
+    <div id={classes.task5}>
+      <div className={classes.greenBar}></div>
+      <div className={classes.formWrapper}>
+        <form onSubmit={onSubmit} className={classes.form}>
+          <label>Email</label>
+          <input
+            className={classes.formInput}
+            name="email"
+            onChange={(event) => setEmail(event.currentTarget.value)}
+            value={email}
+          />
+          <label>Password</label>
+          <input
+            className={classes.formInput}
+            name="password"
+            onChange={(event) => setPassword(event.currentTarget.value)}
+            value={password}
+          />
+          <button disabled={isDisabled} className={classes.formButton}>
+            Login
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

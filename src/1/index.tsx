@@ -1,15 +1,25 @@
 import { FunctionComponent, useState } from "react";
 
 const Task1: FunctionComponent = () => {
-  const [items, setItems] = useState([
-    "Item 1",
-    "Item 2",
-    "Item 3",
-    "Item 4",
-    "Item 5",
+  const [items] = useState([
+    { id: 1, itemName: "Item 1" },
+    { id: 2, itemName: "Item 2" },
+    { id: 3, itemName: "Item 3" },
+    { id: 4, itemName: "Item 4" },
+    { id: 5, itemName: "Item 5" },
   ]);
-
-  return <div>#List goes here#</div>;
+  return (
+    <div>
+      #List goes here#
+      <div>
+        <ul>
+          {items.map((item) => (
+            <li key={item.id}>{item.itemName}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Task1;
