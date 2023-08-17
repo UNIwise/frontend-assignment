@@ -64,7 +64,7 @@ const Task: FunctionComponent = () => {
             <h1>Task 1 - Use styles</h1>
             <p className="task-description">
               This task is mainly about <b>styling</b> in ReactJS in order to
-              create a <b>beautiful UI</b>. Use Less to style the form with
+              create a <b>beautiful UI</b>. Use Sass to style the form with
               interaction feedback such as hover, focus and so on. The goal is to
               make the form as aesthetically pleasing as possible.
             </p>
@@ -112,8 +112,11 @@ const Task: FunctionComponent = () => {
             of pending todos. Search for todos Delete todos
           </ul>
           <p className="task-description">
-            Feel free to use Less to style the applications and to install
+            Feel free to use Sass to style the applications and to install
             third-party packages if needed.
+          </p>
+          <p className="task-description">
+            This task is also a great oppertunity for you to show your TypeScript knowledge.
           </p>
 
           <TaskContainer>
