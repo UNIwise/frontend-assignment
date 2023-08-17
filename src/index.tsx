@@ -79,11 +79,11 @@ const Task: FunctionComponent = () => {
         <>
           <h1>Task 2 - Use component composition</h1>
           <p className="task-description">
-            Use the <b>knowledge</b> you used in the <b>previous tasks</b> to
-            make a searchable list. The requirement is the same as with Task 3.
+            In this task, use your <b>React knowledge</b> to
+            make a searchable list.
             <br />
             <br />
-            Except, this time you must <b>encapsulate</b> the <b>UI</b> parts
+            You must <b>encapsulate</b> the <b>UI</b> parts
             into <b>small components</b>. This means the Input and List goes
             into different small components. In order to communicate between the
             input and the list, the parent component must be used by
