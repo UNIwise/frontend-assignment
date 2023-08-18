@@ -1,18 +1,16 @@
-import { FunctionComponent, useState } from "react";
+import * as React from "react";
 
-const Task3: FunctionComponent = () => {
-  const [inputValue, setInputValue] = useState("");
-  const [items, setItems] = useState([]);
+// Style
+import "./index.scss";
 
-  return (
-    <div>
-      <label>Search Input: </label>
-      <input />
-      <br />
-      <br />
-      #List goes here#
-    </div>
-  );
+// Components
+/*
+ * Create the components you need in the components folder.
+ * You may find inspiration in task 2
+ */
+
+const Task3: React.FunctionComponent = () => {
+  return <div id="task-3">#Code goes here#</div>;
 };
 
 export default Task3;

@@ -1,15 +1,15 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent } from "react";
+
+// Components
+import Input from "./components/Input";
+import List from "./components/List";
 
 const Task2: FunctionComponent = () => {
-  const [value, setValue] = useState("");
-
   return (
     <div>
-      <label>Controlled Input: </label>
-      <input />
+      <Input />
       <br />
-      <br />
-      <p>#Show Input value here#</p>
+      <List />
     </div>
   );
 };
